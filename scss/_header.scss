@@ -4,7 +4,7 @@
     background: #555;
     top:0;
     left:0;
-    z-index:10;
+    z-index:100;
   &:before{
       content:'';
       position:absolute;
@@ -37,12 +37,12 @@
     display:flex;
     position:relative;
     z-index:2;
-      &li{
+      li{
      text-decoration: none;
       margin:0px 0px 0px 20px;
 
   }
-     &ul{
+     ul {
       list-style:none;  
     }
   }
@@ -73,8 +73,8 @@
         height:20px;
         position:relative;
         z-index:3;
-    }  
-    & span{
+   
+    span{
     position:absolute;
     background-color:white;
     left:0;
@@ -90,6 +90,7 @@
         bottom:0;
     }
 
+    }
     .header_menu{
         position: fixed;
         top: 0;
@@ -97,22 +98,47 @@
         width: 100%;
         background-color: white;
         padding: 60px 10px 20px 10px;
-        box-shadow: 2px 5px 61px -7px rgba(19, 27, 34, 0.17);
+    	-webkit-box-shadow: 0px -5px 5px 0px rgba(94, 110, 122, 0.51) inset;
+    	-moz-box-shadow: 0px -5px 5px 0px rgba(94, 110, 122, 0.51) inset;
+	     box-shadow: 0px -5px 5px 0px rgba(94, 110, 122, 0.51) inset;
     }
     .header_list{
         display: flex;
         flex-direction: column;
         align-items: center;
-        &li{
+        li{
             text-decoration: none;
             margin:0px 0px 15px 0px;
         }
-        &ul{
+        ul{
             list-style:none;
         }
     }
 }
-.header_img{
- width:100px;
- height:86px;
+
+button{
+	font-family: 'Open Sans';
+	border: none;
+	outline: none;
+	background-color:#337ab7;
+	border-radius: 30px;
+	
 }
+.header_button{
+	height: 41px;
+	width: 142px;
+  a{
+	color: #fff;
+}
+.header_button a:hover{
+	color: white;
+}
+&:hover{
+	background-color: blue;
+	
+}
+     .header_img{
+      width:100px;
+      height:86px;
+      }
+    }
