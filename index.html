@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="header" id="myHeader">
+  <header>
     <div class="container">
       <div class="header_body">
         <a href="" class="header__logo"><img src="img/logo_Oxit.png" alt="logo" title="logo"></a>
@@ -44,10 +44,52 @@
 
       </div>
     </div>
-    </header>
+  </header>
+
+  <div class="feedback">
+    <div class="container">
+      <div class="text">
+        <h3>Курси програмування у Луцьку</h3>
+        <p>
+          Сфера ІТ розвивається максимально швидко.Зараз дуже
+          популярно здобувати освіту, що повязана з ІТ. Існує лише
+          одна проблема - брак дійсно кваліфікованих спеціалістів в
+          Україні. Під час навчання в університеті ми отримуємо
+          мало практики і "живих", реальних кейсів. ІТ школа ОХІТ
+          створила таку методику навчання, при якій за короткий
+          час ви отримаєте необхідні знання. щоб стати ІТ
+          спеціалістом. Чекаємо вас на нших курсах з
+          програмування в Луцьку. Старт наступного курсу З серпня.
+        </p>
+      </div>
 
 
+      <form class="modal_content">
+        <div class="feedback_form">
+          <h3>Зареєструватися на курси</h3>
+          <label for="name"><b>Ім'я</b></label>
+          <input type="text" placeholder="Ім'я" name="name" required>
 
+          <label for="surname"><b>Прізвище</b></label>
+          <input type="text" placeholder="Прізвище" name="surname" required>
+
+          <label for="psw"><b>Мене більше цікавить</b></label>
+          <input type="text" placeholder="developer or QA" name="psw" required>
+
+          <label for="psw"><b>Номер телефону</b></label>
+          <input type="password" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ" name="phone" required>
+
+          <label for="email"><b>email</b></label>
+          <input type="text" placeholder="Email" name="email" required>
+
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" name="checkbox" style="margin-bottom:15px">
+            <p>Я погоджуюсь із <a href='#' class="link_feedback">Політикою Конфіденційності</a></p>
+          </label>
+          <button class="feedback_button"> <a href='#' class="feedback_link">ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</a></button>
+        </div>
+      </form>
+    </div>
 
     <script src="_header.js"></script>
 </body>
