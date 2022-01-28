@@ -1,0 +1,198 @@
+.mentors{
+    margin: 40px 0px;
+}
+.mentr{
+    font-weight: lighter;
+    font-family: 'Open Sans';
+    font-size: 34px;
+    line-height: 37.4px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #393333;
+}
+.mentor_pic{
+    height: 100%;
+    align-items:center;
+}
+.mentor_descript{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.mentor_descript>h2{
+    font-size: 20px;
+    color: #3498db;
+    font-family: 'Open Sans';
+    margin-bottom: 15px;
+}
+.mentor_descript hr{
+    opacity: 0.3;
+    margin-bottom: 10px;
+}
+
+.under{
+    
+    color: rgba(136, 136, 136, 0.212);
+    margin-top: 35px;
+}
+.mentor_about{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
+    .mentor_about>p{
+        
+        font-family: 'Open Sans';
+        margin-top: auto;
+        line-height: 25.6px;
+        font-size: 16px;
+        color: rgb(136, 136, 136);
+        letter-spacing: 0ch;
+        
+    }
+    
+
+.mentor_slider_item{
+    display: flex;
+    
+    gap:25px;
+}
+.mentors_slider .slick-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .mentors_slider .slick-dots> li {
+    list-style: none;
+    margin: 15px 5px; 
+  }
+   
+  .mentors_slider .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #666; 
+    opacity: 0.5;}
+  
+  .mentors_slider .slick-dots li.slick-active button {
+    opacity: 1;
+    background-color:#666;
+    }
+
+    @media (max-width:767px){
+        .map>iframe{
+            height: 250px;
+        }
+        .mentr{
+            font-weight: lighter;
+            font-family: 'Open Sans';
+            font-size: 22px;
+            line-height: 28.4px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #393333;
+        }
+        .mentor_pic{
+            max-width: 270px;
+            max-height: 280px;
+        }
+        .mentor_pic>img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .mentor_about>p{
+        
+            font-family: 'Open Sans';
+            margin-top: auto;
+            line-height: 16px;
+            font-size: 12px;
+            color: rgb(136, 136, 136);
+            
+            
+        }
+        .mentor_slider_item{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            align-items: center;
+        }
+            .mentor_descript>h2{
+                text-align: center;
+            }
+        }
+        
+
+    
+    @media (max-width:1020px){
+    
+        .mentor_about>p{
+    
+            font-family: 'Open Sans';
+            margin-top: auto;
+            line-height: 20px;
+            font-size: 13px;
+            color: rgb(136, 136, 136);
+            
+            
+        }
+    }
+    .icons_inside{
+        padding:35px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .icon_item{
+        text-align: center;
+    }
+    .ico{
+        color: white;
+        font-size: 50px;
+        font-family: FontAwesome;
+        margin-bottom: 5px;
+    }
+    .icons{
+        
+        background-color: #3498db;
+    }
+    .icon_item>p{
+        font-family: 'Open Sans';
+        font-size: 16px;
+        color: white;
+            
+    }
+    .icon_item>a{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        margin-top: 3px;
+    }
+    .icon_item>a:hover{
+        text-decoration: underline;
+    }
+    @media (max-width:690px){
+        .icons_inside{
+            font-size: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .icon_item{
+            flex: 40%;
+            gap: 30px;
+        }
+
+    }

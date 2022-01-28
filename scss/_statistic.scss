@@ -1,0 +1,64 @@
+@media (max-width:320px){
+    body{
+        font-size:x-small;
+    }
+    input.text{
+      height: 28px;
+      font-size: 9pt;
+      line-height: 4pt;
+    }
+    #request > h1{
+        font-size: x-small;
+    }
+        
+    }
+   .statistic{
+      background-color: #3498db;
+       color: #d2e8f6;
+       padding:60px 0px ;
+   } 
+  .stat_inside{
+      display: flex;
+      justify-content: space-between;
+      
+  }
+  .index{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+  }
+  .value{
+      font-size: 28px;
+      font-weight: bold;
+  }
+  .expl{
+      font-size: 16px;
+  }
+  @media (max-width:767px){
+      .value{
+          font-size: 19px;
+      }
+      .expl{
+          font-size: 12px;
+      }
+  }
+  @media (max-width:400px){
+      .stat_inside{
+          flex-wrap: wrap;
+      }
+      .index{
+          flex: 40%;
+          gap: 8px;
+          margin-bottom: 5px;
+      }
+
+      .value{
+          font-size: 14px;
+      }
+      .expl{
+          font-size: 8px;
+      }
+
+  }
