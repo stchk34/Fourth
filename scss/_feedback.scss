@@ -1,18 +1,19 @@
-.main{
-	
+.contactForm{
 	background-color: #f7f7f7;
 	padding-top:150px;;
 }
-.about{
+.text_course{
 	
 	font-family: 'Open Sans';
 	max-width:  500px; 
 	margin-right: 50px;
 	text-align:center;
+       
+	h1{
+		margin-bottom: 20px;
+	  }
 }
-.about > h1{
-margin-bottom: 20px;
-}
+
 
 .general{
     color: #535353;
@@ -26,6 +27,14 @@ margin-bottom: 20px;
 	font-family: 'Open Sans';
 	padding: 10px 15px 30px;
     width: 100%;
+      h1{
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #535353;
+	  }
 }
 .registr{
 	width: 100%;
@@ -50,14 +59,7 @@ label{
 	line-height: 24pt;
 	font-family: "Spartan";
   }
-  .form > h1{
-	margin-bottom: 20px;
-	font-size: 24px;
-	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #535353;
-  }
+ 
 
   input {
 	width: 100%;
@@ -71,13 +73,15 @@ label{
   input.text{
 	  font-family: 'Open Sans';
 	  height: 42px;
+
+	  &:focus{
+		transition: all 0.3s ease 0s;
+		border: 1px solid #3bd4c7;
+		box-shadow: inset 0px 0px 5px 0px rgba(106, 228, 228, 0.466);
+		
+	  }
   }
-  input.text:focus{
-	transition: all 0.3s ease 0s;
-	border: 1px solid #3bd4c7;
-	box-shadow: inset 0px 0px 5px 0px rgba(106, 228, 228, 0.466);
-	
-  }
+
 input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
 input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
@@ -95,14 +99,15 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	margin-bottom: 8px;
 	margin-top: 8px;
 }
-label > a{
+label  a{
 	color:#337ab7;
 	text-decoration: none;
 
+	&:hover{
+		text-decoration: underline;
+	}
 }
-label > a:hover{
-	text-decoration: underline;
-}
+
 
 
 .box{
@@ -112,10 +117,10 @@ label > a:hover{
 	margin-right: 8px;
 	
 }
-.forbutton{
+.button_contact{
 	text-align: center;
 }
-.regbut{
+.button{
 	text-transform: uppercase;
 	font-size: 15px;
 	line-height: 20px;
@@ -128,10 +133,12 @@ label > a:hover{
 	color: white;
 	height: 52px;
 	width: 400px;
+
+     &:hover{
+		background-color: rgb(83,83,83);
+	}
 }
-.regbut:hover{
-	background-color: rgb(83,83,83);
-}
+
 @media (max-width:767px){
     .general{
 		display: flex;
@@ -140,16 +147,18 @@ label > a:hover{
 		justify-content: center;
 		gap: 15px;
 	}
-		.form> h1{
-			text-align: center;
-		}
+		
 		.form{
           margin: 0 auto;
+		  
+		  h1{
+			text-align: center;
 		}
-		.about{
+		}
+		.text{
 			margin: 0 auto;
 		}
-		.regbut{
+		.button{
 			font-weight: bolder;
 			font-size: 10px;
 			width: 100%;
