@@ -1,8 +1,8 @@
-.st{
+    .h1_whatsay{
 	margin:35px 0px;
   }
   
-	 .feed{
+	 .text_stud{
 		font-family: 'Open Sans';
 	   line-height: 1.7;
 	   font-size: 22px;
@@ -28,22 +28,22 @@
 	   bottom: 20px;
 	   right: 30;
   }
-	 .who>p{
+	 .who p{
 	  font-size: 22px;
 	  color: #666;
 	  font-style: italic;
 	}
-	.who>h3{
+	.who  h3{
 	  font-size: 20px;
 	  color: #333;
   
 	}
 	
-	.talks{
+	.feedbackAboutOxit{
 	  margin-top: 30px;
 	  margin-bottom: 20px;
 	}
-  .stud{
+  .student{
 	text-align: center;
 	margin: 0 auto;
   }
@@ -63,14 +63,16 @@
   .what_slider .slick-dots> li {
 	list-style: none;
 	margin: 15px 10px; 
+
+	button {
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		background-color: #666; 
+		opacity: 0.5;}
+	  
   }
    
-  .what_slider .slick-dots li button {
-	font-size: 0;
-	width: 10px;
-	height: 10px;
-	background-color: #666; 
-	opacity: 0.5;}
   
   .what_slider .slick-dots li.slick-active button {
 	opacity: 1;
@@ -86,13 +88,13 @@
 			width: 7px;
 			height: 7px;
 		  }
-		  .st{
+		  .h1_whatsay{
 			margin:15px 0px;
 			font-size:20px;
 
 		  }
 		  
-		  .feed{
+		  .text_stud{
 			font-family: 'Open Sans';
 			line-height: 1.3;
 			font-size: 14px;
@@ -117,12 +119,12 @@
 			bottom: 5px;
 			right: 10px;
 	   }
-	   .who>p{
+	   .who p{
 		font-size: smaller;
 		color: #666;
 		font-style: italic;
 	  }
-	  .who>h3{
+	  .who  h3{
 		font-size: smaller;
 		color: #333;
 	

@@ -7,7 +7,7 @@
       font-size: 9pt;
       line-height: 4pt;
     }
-    #request > h1{
+    #request h1{
         font-size: x-small;
     }
         
@@ -33,14 +33,14 @@
       font-size: 28px;
       font-weight: bold;
   }
-  .expl{
+  .text_statistic{
       font-size: 16px;
   }
   @media (max-width:767px){
       .value{
           font-size: 19px;
       }
-      .expl{
+      .text_statistic{
           font-size: 12px;
       }
   }
@@ -57,7 +57,7 @@
       .value{
           font-size: 14px;
       }
-      .expl{
+      .text_statistic{
           font-size: 8px;
       }
 

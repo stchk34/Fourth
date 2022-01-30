@@ -15,7 +15,7 @@
 }
 
 
-.general{
+.basic{
     color: #535353;
 	display: flex;
 
@@ -36,7 +36,7 @@
 		color: #535353;
 	  }
 }
-.registr{
+.registration{
 	width: 100%;
 }
 label{
@@ -140,7 +140,7 @@ label  a{
 }
 
 @media (max-width:767px){
-    .general{
+    .basic{
 		display: flex;
 		flex-direction: column;
 		align-items: center;

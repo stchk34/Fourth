@@ -1,7 +1,7 @@
 .mentors{
     margin: 40px 0px;
 }
-.mentr{
+.title_mentor{
     font-weight: lighter;
     font-family: 'Open Sans';
     font-size: 34px;
@@ -10,27 +10,26 @@
     text-align: center;
     color: #393333;
 }
-.mentor_pic{
+.mentor_image{
     height: 100%;
     align-items:center;
 }
-.mentor_descript{
+.descriptionAbout{
     
     display: flex;
     flex-direction: column;
-    
-}
-.mentor_descript>h2{
+
+   h2{
     font-size: 20px;
     color: #3498db;
     font-family: 'Open Sans';
     margin-bottom: 15px;
 }
-.mentor_descript hr{
+   hr{
     opacity: 0.3;
     margin-bottom: 10px;
 }
-
+}
 .under{
     
     color: rgba(136, 136, 136, 0.212);
@@ -40,8 +39,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    }
-    .mentor_about>p{
+    p{
         
         font-family: 'Open Sans';
         margin-top: auto;
@@ -51,11 +49,10 @@
         letter-spacing: 0ch;
         
     }
-    
+}
 
 .mentor_slider_item{
     display: flex;
-    
     gap:25px;
 }
 .mentors_slider .slick-dots {
@@ -70,18 +67,21 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-  .mentors_slider .slick-dots> li {
+            justify-content: center; 
+  
+            li {
     list-style: none;
-    margin: 15px 5px; 
+    margin: 15px 5px;
+    
+    button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #666; 
+        opacity: 0.5;}
   }
-   
-  .mentors_slider .slick-dots li button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #666; 
-    opacity: 0.5;}
+}
+ 
   
   .mentors_slider .slick-dots li.slick-active button {
     opacity: 1;
@@ -92,7 +92,7 @@
         .map>iframe{
             height: 250px;
         }
-        .mentr{
+        .title_mentor{
             font-weight: lighter;
             font-family: 'Open Sans';
             font-size: 22px;
@@ -101,14 +101,14 @@
             text-align: center;
             color: #393333;
         }
-        .mentor_pic{
+        .mentor_image{
             max-width: 270px;
             max-height: 280px;
-        }
-        .mentor_pic>img{
+    
+            img{
             max-width: 100%;
             max-height: 100%;
-        }
+        }}
         .mentor_about>p{
         
             font-family: 'Open Sans';
@@ -125,7 +125,7 @@
             gap:20px;
             align-items: center;
         }
-            .mentor_descript>h2{
+            .descriptionAbout  h2{
                 text-align: center;
             }
         }
@@ -145,54 +145,55 @@
             
         }
     }
-    .icons_inside{
-        padding:35px 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .icon_item{
-        text-align: center;
-    }
-    .ico{
-        color: white;
-        font-size: 50px;
-        font-family: FontAwesome;
-        margin-bottom: 5px;
-    }
-    .icons{
-        
-        background-color: #3498db;
-    }
-    .icon_item>p{
-        font-family: 'Open Sans';
-        font-size: 16px;
-        color: white;
-            
-    }
-    .icon_item>a{
-        font-family: 'Open Sans';
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-        margin-top: 3px;
-    }
-    .icon_item>a:hover{
-        text-decoration: underline;
-    }
-    @media (max-width:690px){
-        .icons_inside{
-            font-size: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            
-        }
-        .icon_item{
-            flex: 40%;
-            gap: 30px;
-        }
+    
 
+    @media (max-width:320px){
+        .map>iframe{
+            height: 90px;
+        }
+        .who  h3{
+            margin-top: 5px;
+        }
+        .what_slider .slick-dots  li {
+            list-style: none;
+            margin: 0px 5px; 
+
+         button {
+                font-size: 0;
+                width: 6px;
+                height: 6px;
+              }
+          }
+         
+          .h1_whatsay{
+            margin:8px 0px;
+            font-size:14px;
+    
+          }
+          .text_stud{
+            font-family: 'Open Sans';
+            line-height: 1.1;
+            font-size: 14px;
+            color: #666;
+            padding: 0px 25px;
+          }
+          .fa-quote-left:before {
+            opacity: 0.5;
+            position: absolute;
+            color: #888;
+            font-size: 18px;
+            top: 0;
+            left: 0;
+            
+       
+          }
+         .fa-quote-right:before{
+            opacity: 0.5;
+            position: absolute;
+            color: #888;
+            font-size: 18px;
+            bottom: 15px;
+            right: 10;
+       }
     }
+    
